@@ -1,0 +1,262 @@
+// Place all the styles related to the Toppages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+//top
+body{
+    font-family: serif;
+}
+
+.header{
+    height: 50rem;
+    padding-top: 15rem;
+    background-image: url(study.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.htitle{
+    text-align: center;
+}
+
+.hnav{
+    margin-top: 10rem;
+    top: 0;
+}
+
+.fixed{
+   position: fixed;/*fixedを設定して固定*/
+   z-index: 999;/*最前面へ*/
+   top: 0;
+   width: 100%;
+   background-color: #fff;
+   //opacity: 0.9;
+   margin-top: 0rem;
+   padding-top: 0.5rem;
+}
+
+.hnav-list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.hnav-item{
+    margin: 0rem 2rem;
+    font-weight: bold;
+}
+
+.hnav-item a{
+    color: #333;
+    letter-spacing: .05rem;
+}
+
+//portfolio
+.psection{
+    background-color: f8f9fa;
+    height: 65rem;
+    padding-top: 5rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.img-scale{
+    width: 100%;
+    height: 100%;
+}
+
+.works-item{
+    display: block;
+   // max-width: 400px;
+   // max-height: 500px;
+    width: 400px;
+    height: 500px;
+    position: relative;
+}
+
+.back{
+   position: absolute;
+   top: 50%;
+   left: 5%;
+}
+
+.ml-6rem{
+    margin-left: 6rem;
+}
+
+.works-item_title{
+    display: flex;
+    justify-content: center;
+}
+
+.works-item_category{
+    display: flex;
+    justify-content: center;
+    color: #0f0;
+}
+
+.relation-item{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.rounded-circle{
+    margin: 0rem 4rem;
+    display: block;
+    height: 4.8rem;
+    width: 4.8rem;
+    line-height: 4.4rem;
+    font-size: 1rem;
+    background-color: #008080;
+    color: #fff;
+    //box-shadow: 0 3px 3px 0 rgb(0 0 0 / 10%);
+}
+
+.smalltext{
+    font-size: 0.8rem;
+}
+
+//skills
+.ssection{
+    background-color: #F7F7F7;
+    height: 45rem;
+    padding-top: 5rem;
+}
+
+.margin-top7{
+    margin-top: 7rem;
+}
+
+.skills-h{
+    background-color: #66CCFF;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.skills-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-style{
+    display: list-item;
+}
+
+.star{
+    font-family: "Font Awesome 5 Free";
+    font-size: 15px;
+    color: #ff9872;
+}
+
+.star::before{font-weight: 900;}
+.star::after{font-weight: 400;}
+
+.star[data-rate="0.0"]::before{content: "";}
+.star[data-rate="0.5"]::before{content: "\f5c0";}
+.star[data-rate="1.0"]::before{content: "\f005";}
+.star[data-rate="1.5"]::before{content: "\f005\f5c0";}
+.star[data-rate="2.0"]::before{content: "\f005\f005";}
+.star[data-rate="2.5"]::before{content: "\f005\f005\f5c0";}
+.star[data-rate="3.0"]::before{content: "\f005\f005\f005";}
+.star[data-rate="3.5"]::before{content: "\f005\f005\f005\f5c0";}
+.star[data-rate="4.0"]::before{content: "\f005\f005\f005\f005";}
+.star[data-rate="4.5"]::before{content: "\f005\f005\f005\f005\f5c0";}
+.star[data-rate="5.0"]::before{content: "\f005\f005\f005\f005\f005";}
+
+.star[data-rate="0.0"]::after{content: "\f005\f005\f005\f005\f005";}
+.star[data-rate="0.5"]::after{content: "\f005\f005\f005\f005";}
+.star[data-rate="1.0"]::after{content: "\f005\f005\f005\f005";}
+.star[data-rate="1.5"]::after{content: "\f005\f005\f005";}
+.star[data-rate="2.0"]::after{content: "\f005\f005\f005";}
+.star[data-rate="2.5"]::after{content: "\f005\f005";}
+.star[data-rate="3.0"]::after{content: "\f005\f005";}
+.star[data-rate="3.5"]::after{content: "\f005";}
+.star[data-rate="4.0"]::after{content: "\f005";}
+.star[data-rate="4.5"]::after{content: "";}
+.star[data-rate="5.0"]::after{content: "";}
+
+.skills-sub{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+//about
+.asection{
+    background-color: f8f9fa;
+    background-image: url(sensen.jpg);
+    height: 42rem;
+    padding-top: 5rem;
+}
+
+.img-box{
+    background-color: #FFDBC9;
+    display: inline-block;
+    border-radius: 80%;
+}
+
+.img-adjust{
+    width: 70%;
+    height: 70%;
+}
+
+.about-item{
+    font-size: 20px;
+    list-style: none;
+}
+
+.text-style{
+    //font-weight: bolder;
+}
+
+//carrer
+.csection{
+    background-color: #F7F7F7;
+    height: 60rem;
+    padding-top: 5rem;
+}
+
+.font-size16px{
+    font-size: 16px;
+}
+
+.content-style{
+    list-style: none;
+}
+
+.font-size20px{
+    font-size: 20px;
+}
+
+.no-wraps{
+    white-space: nowrap;
+}
+
+.border-none{
+    border: none !important;
+}
+
+.line-height25px{
+    line-height: 25px;
+}
+
+
+//contact
+footer.footer{
+    background-color: #BBFFFF;
+    height: 30rem;
+    padding-top: 5rem;
+}
+
+.mt-6{
+    margin-top: 6rem;
+}
+
+.text-right{
+    text-align: right;
+}
+
