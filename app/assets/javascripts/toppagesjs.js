@@ -17,10 +17,9 @@ $(function () {
 	if (scroll >= headerH){//headerの高さ以上になったら
 			$('.hnav').addClass('fixed');
 		}else{
-			$('.hnav').removeClass('fixed')
+			$('.hnav').removeClass('fixed');
 		}
   }
-
   // 画面をスクロールをしたら動かしたい場合の記述
   $(window).scroll(function () {
 	  FixedAnime();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/
