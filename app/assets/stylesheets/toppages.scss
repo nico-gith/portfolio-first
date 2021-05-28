@@ -8,21 +8,30 @@ body{
 
 .header{
     width: 100%;
+    //min-height: 30rem;
     //height: 50rem;
     padding-top: 15rem;
     background-image: url(study.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top;
 }
 
 .htitle{
     text-align: center;
 }
 
+.hpadding{
+    padding-top: 16rem;
+    padding-bottom: 13rem;
+}
+
 .hnav{
-    margin-top: 10rem;
-    padding-bottom: 3rem;
-    top: 0;
+    //margin-top: 12rem;
+    //padding-bottom: 5rem;
+    //top: 0;
+    //2ページ目以降でナビバーが出て来た際のガタつき防止
+    height: 0;
 }
 
 .fixed{
@@ -32,8 +41,9 @@ body{
    width: 100%;
    background-color: #fff;
    //opacity: 0.9;
-   margin-top: 0rem;
+   //margin-top: 0rem;
    padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
 }
 
 .hnav-list{
@@ -42,8 +52,14 @@ body{
     list-style: none;
 }
 
+// 2ページ目以降でナビバーが出て来た際のガタつき防止に伴う処置
+.fix-background{
+    background-color: #fff;
+    padding-bottom: 1rem;
+}
+
 .hnav-item{
-    margin: 0rem 2rem;
+    margin: 0rem 3vw;
     font-weight: bold;
 }
 
@@ -54,7 +70,7 @@ body{
 
 //portfolio
 .psection{
-    width: 100%;
+    //width: 100%;
     background-color: f8f9fa;
     //height: 65rem;
     padding-top: 5rem;
@@ -71,15 +87,21 @@ body{
 
 .img-scale{
     width: 100%;
-    height: 100%;
+    height: 23rem;
+}
+
+.cd{
+    display: flex;
+    justify-content: center;
 }
 
 .works-item{
     display: block;
    // max-width: 400px;
    // max-height: 500px;
-    width: 400px;
-    height: 500px;
+    //width: 100%;
+    max-width: 24rem;
+    //height: 500px;
     position: relative;
 }
 
@@ -87,6 +109,10 @@ body{
    position: absolute;
    top: 50%;
    left: 5%;
+}
+
+.font-size30{
+    font-size: 30px;
 }
 
 .ml-6rem{
@@ -129,10 +155,11 @@ body{
 
 //skills
 .ssection{
-    width: 100%;
+    //width: 100%;
     background-color: #F7F7F7;
     //height: 45rem;
     padding-top: 5rem;
+    padding-bottom: 3rem;
 }
 
 .margin-top7{
@@ -196,11 +223,12 @@ body{
 
 //about
 .asection{
-    width: 100%;
+    //width: 100%;
     background-color: f8f9fa;
     background-image: url(sensen.jpg);
     //height: 42rem;
     padding-top: 5rem;
+    padding-bottom: 3rem;
 }
 
 .img-box{
@@ -225,10 +253,11 @@ body{
 
 //carrer
 .csection{
-    width: 100%;
+    //width: 100%;
     background-color: #F7F7F7;
     //height: 60rem;
     padding-top: 5rem;
+    padding-bottom: 3rem;
 }
 
 .font-size16px{
@@ -258,10 +287,11 @@ body{
 
 //contact
 footer.footer{
-    width: 100%;
+    //width: 100%;
     background-color: #BBFFFF;
     //height: 30rem;
     padding-top: 5rem;
+    padding-bottom: 3rem;
 }
 
 .mt-6{

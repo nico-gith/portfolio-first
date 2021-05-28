@@ -16,8 +16,10 @@ $(function () {
 	var scroll = $(window).scrollTop();
 	if (scroll >= headerH){//headerの高さ以上になったら
 			$('.hnav').addClass('fixed');
+			$('.hnav-list').addClass('fix-background');
 		}else{
 			$('.hnav').removeClass('fixed');
+			$('.hnav-list').removeClass('fix-background');
 		}
   }
   // 画面をスクロールをしたら動かしたい場合の記述
